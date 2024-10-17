@@ -29,8 +29,10 @@ if (!userEmail.includes("@") || !userEmail.includes(".")) {
   // stampo l'esito del controllo
   if (isAuthorized) {
     console.log("Accesso consentito");
+    alert("Accesso consentito");
   } else {
-    console.log("Accesso negato, l'email inserita non ha diritti di accesso");
+    console.log("Accesso negato");
+    alert("Accesso negato, l'email inserita non ha diritti di accesso");
   }
 }
 
