@@ -5,11 +5,12 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull'esito del controllo.
 */
 
-// dichiarazione variabile iniziale
+// array con lista di email valide
 const validEmails = ["marco@gmail.com", "paolo@gmail.com", "michele@gmail.com"];
 
-// array con lista di email valide
 // prompt di richiesta inserimento email
+const userEmail = prompt("Inserisci la tua email:");
+
 // controllo validità dell'email inserita
 // controllo se l'email è nella lista
 // stampo l'esito del controllo
