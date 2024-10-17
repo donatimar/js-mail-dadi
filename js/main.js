@@ -9,10 +9,17 @@ stampa un messaggio appropriato sull'esito del controllo.
 const validEmails = ["marco@gmail.com", "paolo@gmail.com", "michele@gmail.com"];
 
 // prompt di richiesta inserimento email
-const userEmail = prompt("Inserisci la tua email:");
+const userEmail = prompt("Inserisci la tua email");
 
 // controllo validità dell'email inserita
-// controllo se l'email è nella lista
+if (!userEmail.includes("@") || !userEmail.includes(".")) {
+  // se l'email inserita è errata mostra un messaggio di errore
+  console.log("Errore: l'email inserita non è valida");
+  alert("Errore: l'email inserita non è valida");
+
+  // controllo se l'email è nella lista
+}
+
 // stampo l'esito del controllo
 
 // * Gioco dei dadi
