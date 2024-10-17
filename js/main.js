@@ -16,11 +16,23 @@ if (!userEmail.includes("@") || !userEmail.includes(".")) {
   // se l'email inserita è errata mostra un messaggio di errore
   console.log("Errore: l'email inserita non è valida");
   alert("Errore: l'email inserita non è valida");
+} else {
+  // Controllo se l'email è nella lista
+  let isAuthorized = false;
 
-  // controllo se l'email è nella lista
+  for (let i = 0; i < validEmails.length; i++) {
+    if (userEmail === validEmails[i]) {
+      isAuthorized = true;
+    }
+  }
+
+  // stampo l'esito del controllo
+  if (isAuthorized) {
+    console.log("Accesso consentito");
+  } else {
+    console.log("Accesso negato, l'email inserita non ha diritti di accesso");
+  }
 }
-
-// stampo l'esito del controllo
 
 // * Gioco dei dadi
 /*
