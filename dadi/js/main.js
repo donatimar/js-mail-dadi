@@ -15,10 +15,10 @@ console.log("Il punteggio del computer è:", computerScore);
 // chi ha fatto il punteggio più alto?
 if (playerScore > computerScore) {
   console.log("Il punteggio più alto è del giocatore");
-  alert("Il punteggio più alto è del giocatore"); //
+  alert("Il punteggio più alto è del giocatore");
 } else if (playerScore < computerScore) {
   console.log("Il punteggio più alto è del computer");
-  alert("Il punteggio più alto è del computer"); //
+  alert("Il punteggio più alto è del computer");
 } else {
   console.log("il giocatore e il computer hanno lo stesso punteggio");
   alert("Il giocatore e il computer hanno lo stesso punteggio");
