@@ -9,7 +9,7 @@ const playerScore = Math.floor(Math.random() * 6) + 1;
 console.log("Il punteggio del giocatore è:", playerScore);
 
 // genera un numero casuale per il computer
-const computerScore = Math.floor(Math.random() * 6) + 1; // G
+const computerScore = Math.floor(Math.random() * 6) + 1;
 console.log("Il punteggio del computer è:", computerScore);
 
 // chi ha fatto il punteggio più alto?
